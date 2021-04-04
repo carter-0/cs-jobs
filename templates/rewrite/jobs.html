@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta and SEO -->
+    <title>Computer Science Jobs</title>
+    <meta charset="utf-8">
+    <meta name="description" content="CSjobs.net - Find the latest Computer Science Jobs in the UK instantly and effectively. Updated every 10 Minutes." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="w3-bar w3-large w3-dark-grey">
+    <div id="navLeftContainer">
+        <a href="/" id="navLeft" class="w3-bar-item w3-button w3-left">Home</a>
+        <div class="search-container">
+            <form id="sContainer" class="sform" action="/">
+              <input id="sInput" type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <label for="sInput"><p>Search</p></label>
+            </form>
+        </div>
+    </div>
+    <div id="dropdownContainer" class="w3-bar-item w3-right w3-dropdown-hover">
+        <button id="dropdown" class="w3-button">Menu ▼</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/login" class="w3-bar-item w3-button">Log in</a>
+        <a href="/signup" class="w3-bar-item w3-button">Sign up</a>
+        <a href="/contact-us" class="w3-bar-item w3-button">Contact us</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="flexContainer"> <!-- Flex Container -->
+      <main>
+        <div class="main" id="main" name="main">
+          
+        </div>
+      </main>
+    </div>
+
+    <div class="d-flex justify-content-center mb-3" id="sentinel">
+      <div class="spinner-border" role="status"></div>
+    </div>
+  <p id="id" class="id" name="id" style="display: none;">{{ id }}</p>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/jobs.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+/etc/letsencrypt/live/jobs.ca-cdn.xyz/fullchain.pem

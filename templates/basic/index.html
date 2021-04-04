@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171847013-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171847013-1');
+</script>
+
+    <meta charset="utf-8">
+    <title>Computer Science Jobs</title>
+
+    <style>
+      .nav-link {
+        padding-right: .5rem !important;
+        padding-left: .5rem !important;
+      }
+
+        /* Fixes dropdown menus placed on the right side */
+      .ml-auto .dropdown-menu {
+        left: auto !important;
+        right: 0px;
+      }
+
+      .topnav .search-container {
+        float: right;
+      }
+
+      .topnav input[type=text] {
+        padding: 6px;
+        margin-top: 0px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .topnav .search-container button {
+        float: right;
+        padding: 6px;
+        margin-top: 0px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .topnav .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;  
+      }
+    }
+
+    .searchFormContainer {
+            padding-left: 16px;
+            padding-top: 16px;
+            max-width: 500px;
+        }
+
+    .innerContainer {
+        padding: 5px;
+        border: 1px solid #808080;
+        border-radius: 10px;
+    }
+
+    #wrapper {
+    display: flex;
+    }
+
+    #left {
+    flex: 0 0 30%;
+    }
+
+    #right {
+    flex: 1;
+    }
+
+    .numOfJobs {
+        max-width: 700px;
+        margin-top: 30px;
+    }
+
+    .searching {
+      color: #0c91f7;
+    }
+
+    </style>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script data-ad-client="ca-pub-9130614090593636" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta name="description" content="CSjobs.net - Find the latest Computer Science Jobs in the UK instantly and effectively. Updated every 10 Minutes." />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">CS Jobs</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <div class="topnav">
+          <div class="search-container">
+          <form action="/">
+            <label for="search_bar"><p style="display: none;">Search Bar</p></label>
+            <input id="search_bar" type="text" placeholder="Search.." name="search"> 
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+        <li class="nav-item">
+          <a class="nav-link login" href="/contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link signup" href="/login">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link signup" href="/signup">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="wrapper">
+    <div class="card-body" id="left">
+        <form id="job-search-form" method="get" action=".">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <div class="searchFormContainer">
+        <div class="innerContainer">
+        <div id="div_id_q" class="form-group"> <label for="id_search" class="control-label ">
+            Job Title
+        </label> <div class="controls "> <input type="text" class="w3-input" name="search" placeholder="Python, System Admin. . ." class="textinput textInput form-control" id="id_search" name="input_search"> </div> </div> <div id="div_id_company" class="form-group"> <label for="id_company" class="control-label ">
+            Company
+        </label> <div class="controls "> <input type="text" class="w3-input" name="jobs-at" placeholder="Reed, Tradewind Recruitment. . ." class="textinput textInput form-control" id="id_company"> </div> </div> <div id="div_id_location" class="form-group"> <label for="id_location" class="control-label ">
+            Location
+        </label> <div class="controls "> <input type="text" class="w3-input" name="jobs-in" placeholder="London, Birmingham. . ." class="textinput textInput form-control" id="id_location"> </div> </div> <br /> <input id="jobbutton" class="w3-btn w3-blue" type="submit" name="submit" value="Job Search" class="btn btn-primary apply btn-block"> </form>
+    
+    </div>
+    </div>
+    </div>
+    <div style="display: flex; flex-direction: column;" id="jobsAndItemContainer">
+    <div class="numOfJobs" id="right">
+        <h1>{{ value }} CS Jobs</h1>
+        <p class="searching">Searching reed.co.uk and more coming soon</p>
+    </div>
+
+    <!-- {% include 'basic/custom.html' %} (old code)-->
+
+    <div id="scroller" class="mb-3">
+
+      <!-- template schema, hidden from the dom -->
+      <template id="post_template">
+        <!-- template content -->
+        <div class="mb-3 animated fadeIn">
+          <div id="mainContent" name="mainContent" class="mainContent">
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="d-flex justify-content-center mb-3" id="sentinel">
+      <div class="spinner-border" role="status"></div>
+    </div>    
+    
+    </div>
+    </div>
+    <script src="/scroll.js"></script> <!-- Loads new content when at the end of scroll -->
+  </body>
+</html>

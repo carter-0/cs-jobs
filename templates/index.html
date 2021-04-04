@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta and SEO -->
+    <title>Computer Science Jobs</title>
+    <meta charset="utf-8">
+    <meta name="description" content="CSjobs.net - Find the latest Computer Science Jobs in the UK instantly and effectively. Updated every 10 Minutes." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="w3-bar w3-large w3-dark-grey">
+    <div id="navLeftContainer">
+        <a href="/" id="navLeft" class="w3-bar-item w3-button w3-left">Home</a>
+        <div class="search-container">
+            <form id="sContainer" class="sform" action="/">
+              <input id="sInput" type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <label for="sInput"><p>Search</p></label>
+            </form>
+        </div>
+    </div>
+    <div id="dropdownContainer" class="w3-bar-item w3-right w3-dropdown-hover">
+        <button id="dropdown" class="w3-button">Menu ▼</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/login" class="w3-bar-item w3-button">Log in</a>
+        <a href="/signup" class="w3-bar-item w3-button">Sign up</a>
+        <a href="/contact-us" class="w3-bar-item w3-button">Contact us</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="flexContainer"> <!-- Flex Container -->
+        <!-- Search Form Window -->
+        <form id="left" id="job-search-form" method="get" action=".">
+            <div class="searchFormContainer">
+                <div class="searchFormBorder">
+                    <div id="div_id_q" class="form-group">
+                        <label for="id_search" class="control-label ">Job Title</label>
+                        <div class="controls ">
+                            <input type="text" class="w3-input" name="search" placeholder="Python, System Admin. . ." class="textinput textInput form-control" id="id_search" name="input_search">
+                        </div>
+                    </div>
+                    <div id="div_id_company" class="form-group">
+                        <label for="id_company" class="control-label ">Company</label>
+                        <div class="controls ">
+                            <input type="text" class="w3-input" name="jobs-at" placeholder="Reed, Tradewind Recruitment. . ." class="textinput textInput form-control" id="id_company">
+                        </div>
+                    </div>
+                    <div id="div_id_location" class="form-group">
+                        <label for="id_location" class="control-label ">Location</label>
+                        <div class="controls ">
+                            <input type="text" class="w3-input" name="jobs-in" placeholder="London, Birmingham. . ." class="textinput textInput form-control" id="id_location">
+                        </div>
+                    </div>
+                    <br />
+                    <input id="jobbutton" class="w3-btn w3-blue" type="submit" name="submit" value="Job Search" class="btn btn-primary apply btn-block">
+                </div>
+            </div>
+        </form>
+
+        <div id="jobsAndItemContainer">
+            <div id="right" class="numOfJobs">
+                <h1>{{ value }} CS Jobs</h1>
+                <p class="searching">Searching reed.co.uk and more coming soon</p>
+            </div>
+    
+            <div id="scroller" class="mb-3">
+                <template id="post_template">
+                    <div id="mainContent" name="appendContent">
+                        <!-- Posts are Appended here -->
+                    </div>
+                </template>
+            </div>
+
+            <div class="d-flex justify-content-center mb-3" id="sentinel">
+                <div class="spinner-border" role="status">
+                    <!-- End of Posts (For JS) -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts and Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/scroll.js"></script>
+</body>
+</html>

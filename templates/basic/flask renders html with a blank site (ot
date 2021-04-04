@@ -1,0 +1,15 @@
+flask renders html with a blank site (other then css and the main div.)
+
+javascript makes POST request to flask server on /messages and the server checks if session['logged_in'] is true. If it is, the server goes to the messages database
+and retreives the data that's associated with that specific user. The database will include all past messages and will be encrypted. Flask will decrypt the info 
+with [placeholder] and will send it back to javascript.
+
+1. js sends post to find all the recent users that is stored in 
+
+
+
+
+
+database will contain messages, time and author. A database will be created for each conversation between people. every message that will be sent will be stored in
+the appropriate database. The database will be on a (local for now) remote server.
+
